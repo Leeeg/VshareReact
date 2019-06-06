@@ -25,7 +25,7 @@ class ImpowerAdd extends React.Component {
                     }
                 }
                 this.setState({
-                    dataUpload: data,
+                    dataUpload: JSON.stringify(data),
                 }, function () {
                     console.log(this.state.dataUpload);
                 })
@@ -35,49 +35,33 @@ class ImpowerAdd extends React.Component {
                 return;
             }
         };
-        if (file) {
+        console.log(files);
+        if (files) {
             try {
                 // 以二进制方式打开文件
                 fileReader.readAsBinaryString(files[0]);
-            }catch (e) {
+            } catch (e) {
 
             }
+        } else {
         }
     };
 
     upLoadData = () => {
         request({
             url: '/impower/admin/insertImpowers',
-            method: 'post',
-            headers: {		 // 请求头
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
-            data: this.state.dataUpload,
+            method: 'POST',
+            body: JSON.stringify({
+                listData: this.state.dataUpload,
+            }),
         })
             .then(function (res) {
                 console.log(res);
-            })
-            .then(data => {
-                const arr = [];
-                for (let i = 0; i < 50; i++) {
-                    arr.push({
-                        key: i,
-                        meid: `123` + i,
-                        imei: 456,
-                        isImpower: true,
-                    });
-                }
-                this.setState({
-                    data: arr
-                }, function () {
-                    console.log('length = ' + this.state.data.length);
-                });
             });
     };
 
     state = {
-        dataUpload: {},
+        dataUpload: '',
     };
 
     render() {

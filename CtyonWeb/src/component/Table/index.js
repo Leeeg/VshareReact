@@ -35,13 +35,13 @@ const columns = [
     },
     {
         title: 'sysVersion',
-        dataIndex: 'sysVersion',
-        key: 'sysVersion'
+        dataIndex: 'sysversion',
+        key: 'sysversion'
     },
     {
         title: 'appVersion',
-        dataIndex: 'appVersion',
-        key: 'appVersion'
+        dataIndex: 'appversion',
+        key: 'appversion'
     },
     {
         title: 'Location',
@@ -50,10 +50,10 @@ const columns = [
     },
     {
         title: 'IsImpower',
-        dataIndex: 'isImpower',
-        key: 'isImpower',
-        render: isImpower => (
-            <span>{isImpower ? '已授权' : ''}</span>
+        dataIndex: 'isimpower',
+        key: 'isimpower',
+        render: isimpower => (
+            <span>{isimpower ? '已授权' : <Button>点击授权</Button>}</span>
         )
     },
 ];
@@ -83,24 +83,22 @@ class ImpowerTable extends React.Component {
 
     componentDidMount() {
         request({
-            url: '/impower/admin/getAllImpowers?key=1',
-            method: 'get',
+            url: '/impower/admin/getAllImpowers',
+            method: 'GET',
         })
-            .then(function (res) {
-                console.log(res);
-            })
             .then(data => {
-                const arr = [];
-                for (let i = 0; i < 50; i++) {
-                    arr.push({
-                        key: i,
-                        meid: `123` + i,
-                        imei: 456,
-                        isImpower: true,
-                    });
-                }
+                console.log('data : ' + JSON.stringify(data));
+                // const arr = [];
+                // for (let i = 0; i < 50; i++) {
+                //     arr.push({
+                //         key: i,
+                //         meid: `123` + i,
+                //         imei: 456,
+                //         isImpower: true,
+                //     });
+                // }
                 this.setState({
-                    data: arr
+                    data: data.data
                 }, function () {
                     console.log('length = ' + this.state.data.length);
                 });
@@ -116,9 +114,6 @@ class ImpowerTable extends React.Component {
         const hasSelected = selectedRowKeys.length > 0;
         return (
             <div>
-                <div style={{minHeight: 100, backgroundColor: "yellow", marginBottom: 16}}>
-
-                </div>
                 <div style={{marginBottom: 16}}>
                     <Button type="primary" onClick={this.start} disabled={!hasSelected} loading={loading}>
                         Reload

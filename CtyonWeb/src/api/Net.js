@@ -1,5 +1,5 @@
 //全局路径
-const commonUrl = 'http://localhost:8081/api';
+const commonUrl = 'http://192.168.0.40:8081/api';
 
 //解析json
 function parseJSON(response) {
@@ -17,18 +17,16 @@ function checkStatus(response) {
 }
 
 export default function request(options = {}) {
-    const {data, url} = options;
+    const {headers, url} = options;
+    delete options.url;
     options = {...options};
     options.mode = 'cors';//跨域
-    delete options.url;
-    if (data) {
-        delete options.data;
-        options.body = JSON.stringify({data})
+    if (!headers) {
+        options.headers = {
+            'Content-Type': 'application/json;charset=UTF-8'
+        };
     }
-    options.headers = {
-        'Content-Type': 'application/json;charset=UTF-8'
-    };
-    return fetch(commonUrl + url, options, {credentials: 'include'})
+    return fetch(commonUrl + url, options)
         .then(checkStatus)
         .then(parseJSON)
         .catch(err => ({err}))

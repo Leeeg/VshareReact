@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/antd-demo.iml" filepath="$PROJECT_DIR$/.idea/antd-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CtyonWeb/.idea/CtyonWeb.iml" filepath="$PROJECT_DIR$/../CtyonWeb/.idea/CtyonWeb.iml" />
     </modules>
   </component>
 </project>
