@@ -50,7 +50,7 @@ class ImpowerAdd extends React.Component {
     upLoadData = () => {
         request({
             url: '/impower/admin/insertImpowers',
-            method: 'POST',
+            method: 'PUT',
             body: JSON.stringify({
                 listData: this.state.dataUpload,
             }),
