@@ -1,14 +1,11 @@
-import React from "react";
-import {Button, Icon} from 'antd';
-import request from '../../../api/Net';
-import ExcelExport from "../../../component/Excel/export";
+import React, {Component} from 'react';
 import * as XLSX from "xlsx";
 
-class ImpowerAdd extends React.Component {
+class ExcelInput extends Component {
 
-    state = {
-        dataUpload: '',
-    };
+    constructor(props){
+        super();
+    }
 
     onImportExcel = file => {
         // 获取上传的文件对象
@@ -52,34 +49,14 @@ class ImpowerAdd extends React.Component {
         }
     };
 
-    upLoadData = () => {
-        console.log('dataUpload : ' + this.state.dataUpload);
-        request({
-            url: '/impower/admin/insertImpowers',
-            method: 'POST',
-            body: JSON.stringify({
-                listData: this.state.dataUpload,
-            }),
-        })
-            .then(function (res) {
-                console.log(res);
-            });
-    };
-
     render() {
         return (
-            <div style={{marginTop: 100}}>
-                <Icon type={"upload"}/>
+            <div>
                 <input type='file' accept='.xlsx, .xls' onChange={this.onImportExcel}/>
-                <Button onClick={this.upLoadData}>上传</Button>
-                <p>支持 .xlsx、.xls 格式的文件</p>
-
-                <Icon type={"download"}/>
-                <ExcelExport/>
-                <p>下载模板</p>
             </div>
-        );
+        )
+
     }
 }
 
-export default ImpowerAdd;
+export default ExcelInput;

@@ -2,6 +2,7 @@
   "name": "antd-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@antv/data-set": "^0.10.2",
     "@babel/plugin-proposal-decorators": "^7.4.4",
