@@ -1,4 +1,4 @@
-import {Table, Button} from 'antd';
+import {Table, Button, Popconfirm} from 'antd';
 import React from 'react'
 import request from '../../api/Net'
 
@@ -71,8 +71,18 @@ class ImpowerTable extends React.Component {
             dataIndex: 'isimpower',
             key: 'isimpower',
             render: (isimpower, record) => (
-                <Button onClick={() => this.impowerClick(record)}> {isimpower ==1 ? '已授权(点击取消)' : '点击授权'}</Button>
+                <Button onClick={() => this.impowerClick(record)}> {isimpower == 1 ? '已授权(点击取消)' : '点击授权'}</Button>
             )
+        },
+        {
+            title: 'operation',
+            dataIndex: 'operation',
+            render: (text, record) =>
+                this.state.data.length >= 1 ? (
+                    <Popconfirm title="Sure to delete?" onConfirm={() => this.handleDelete(record.key)}>
+                        <a href="javascript:;">Delete</a>
+                    </Popconfirm>
+                ) : null,
         },
     ];
 
@@ -82,13 +92,14 @@ class ImpowerTable extends React.Component {
             method: 'GET',
         })
             .then(data => {
-                console.log('getAllImpowers : ' + JSON.stringify(data));
-                this.setState({
-                    data: data.data
-                }, function () {
-                    console.log('setState : ' + this.state.data)
-                    ;
-                });
+                if (data){
+                    console.log('getAllImpowers : ' + JSON.stringify(data));
+                    this.setState({
+                        data: data.data
+                    }, function () {
+                        console.log('setState : ' + this.state.data);
+                    });
+                }
             });
     }
 

@@ -1,5 +1,6 @@
 //全局路径
 const commonUrl = 'http://192.168.0.40:8081/api';
+// const commonUrl = 'http://47.106.254.237:8081/api';
 
 //解析json
 function parseJSON(response) {
@@ -9,6 +10,7 @@ function parseJSON(response) {
 //检查请求状态
 function checkStatus(response) {
     if (response.status >= 200 && response.status < 500) {
+        console.log('status = ' + response.status);
         return response
     }
     const error = new Error(response.statusText);
@@ -29,5 +31,5 @@ export default function request(options = {}) {
     return fetch(commonUrl + url, options)
         .then(checkStatus)
         .then(parseJSON)
-        .catch(err => ({err}))
+        .catch(err => alert('' + err));
 }
