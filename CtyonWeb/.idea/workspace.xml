@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b20cb60e-9175-4a8d-a257-9009acf37c54" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Net.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Net.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Excel/export.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Excel/export.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/Table/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Table/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Impower/Add/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Impower/Add/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/container/Impower/Show/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/Impower/Show/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ctyon-web/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ctyon-web/.idea/ctyon-web.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ctyon-web/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
@@ -58,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/container/Impower/Show/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="696">
+              <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -67,23 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/Net.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/component/Table/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="456">
+              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -93,8 +84,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -120,7 +111,20 @@
       <find>ExcelInput</find>
       <find>this.setState(</find>
       <find>getAllImpowers :</find>
+      <find>className=</find>
+      <find>ant-row</find>
+      <find>align</find>
+      <find>upLoadData</find>
+      <find>Popconfirm</find>
+      <find>handleDelete</find>
+      <find>state</find>
+      <find>this.state</find>
+      <find>changeData</find>
+      <find>this.setState</find>
     </findStrings>
+    <replaceStrings>
+      <replace>this.props</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -128,9 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/component/Slider/style.css" />
-        <option value="$PROJECT_DIR$/src/component/Impower/style.css" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/component/Impower/Impower.js" />
         <option value="$PROJECT_DIR$/src/component/util/Utils.js" />
         <option value="$PROJECT_DIR$/config-overrides.js" />
@@ -155,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/router/PrivateRoute/index.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/container/Login/index.js" />
-        <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/component/HeaderBar/index.js" />
         <option value="$PROJECT_DIR$/src/component/HeaderBar/style.css" />
@@ -167,17 +167,21 @@
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/component/SiderNav/index.js" />
         <option value="$PROJECT_DIR$/src/component/Excel/index.js" />
-        <option value="$PROJECT_DIR$/src/container/Impower/Show/index.js" />
-        <option value="$PROJECT_DIR$/src/container/Impower/Show/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/component/Excel/input.js" />
-        <option value="$PROJECT_DIR$/src/component/Excel/export.js" />
         <option value="$PROJECT_DIR$/src/component/Excel/import.js" />
-        <option value="$PROJECT_DIR$/src/container/Impower/Add/index.js" />
-        <option value="$PROJECT_DIR$/src/container/Impower/Add/index.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/api/Net.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/component/Excel/style.css" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Add/style.css" />
+        <option value="$PROJECT_DIR$/src/component/Excel/export.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Show/style.css" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Add/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Add/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Show/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Show/index.js" />
         <option value="$PROJECT_DIR$/src/component/Table/index.js" />
       </list>
     </option>
@@ -223,6 +227,13 @@
               <item name="CtyonWeb" type="b2602c69:ProjectViewProjectNode" />
               <item name="CtyonWeb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+              <item name="Excel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CtyonWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CtyonWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="container" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -258,7 +269,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component/Excel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/container/Impower/Show" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -270,19 +281,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/container/Impower/Show" />
+      <recent name="$PROJECT_DIR$/src/component/Excel" />
+      <recent name="$PROJECT_DIR$/src/component" />
+      <recent name="$PROJECT_DIR$/src/util" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/container/Impower/Add" />
       <recent name="$PROJECT_DIR$/src/container/Impower/Show" />
       <recent name="$PROJECT_DIR$/src/container" />
       <recent name="$PROJECT_DIR$/src/router" />
       <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/component/Excel" />
-      <recent name="$PROJECT_DIR$/src/component" />
-      <recent name="$PROJECT_DIR$/src/util" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/container" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -311,12 +322,18 @@
       <workItem from="1560154520214" duration="24565000" />
       <workItem from="1560253718234" duration="511000" />
       <workItem from="1560254244441" duration="2147000" />
-      <workItem from="1560389399114" duration="933000" />
+      <workItem from="1560389399114" duration="13923000" />
+      <workItem from="1560412154110" duration="68000" />
+      <workItem from="1560412236893" duration="11818000" />
+      <workItem from="1560425737753" duration="2349000" />
+      <workItem from="1560428097721" duration="5695000" />
+      <workItem from="1560477375329" duration="9000" />
+      <workItem from="1560477400975" duration="17884000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77547000" />
+    <option name="totallyTimeSpent" value="128360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="59" y="-4" width="1861" height="1084" extended-state="6" />
@@ -368,52 +385,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/container/Other/AnimationDemo/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/html-to-draftjs/dist/html-to-draftjs.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/Other/ChartDemo/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="44" column="22" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/Other/DraftDemo/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/Other/ErrorPage/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-895">
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/Other/GalleryDemo/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/bodymovin/build/player/bodymovin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/Loading/LoadableComponent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -506,13 +477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/modal/Modal.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/container/Other/DraftDemo/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -538,13 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -602,7 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/Impower/Add/style.css" />
     <entry file="file://$PROJECT_DIR$/src/util/ExcelUtils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -659,23 +615,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/static/js/2.c31e60d7.chunk.js" />
-    <entry file="file://$PROJECT_DIR$/src/component/Excel/export.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="103" column="6" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="435" column="8" selection-start-line="435" selection-start-column="8" selection-end-line="435" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/Excel/import.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-72">
@@ -733,10 +672,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/row/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1423">
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/card/Grid.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/card/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Excel/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/18.8594114f.chunk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3047" selection-start-column="3047" selection-end-column="3047" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="5245" column="4" selection-start-line="5245" selection-start-column="4" selection-end-line="5245" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/modal/Modal.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/Net.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Excel/export.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="72" column="20" lean-forward="true" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#226#230#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="458" column="17" selection-start-line="458" selection-start-column="17" selection-end-line="458" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Impower/Add/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Impower/Show/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/container/Impower/Add/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1063">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="-2496">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -745,28 +779,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/container/Impower/Show/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="696">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/Net.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/component/Table/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="456">
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
         </state>
       </provider>
     </entry>

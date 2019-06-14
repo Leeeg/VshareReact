@@ -1,0 +1,12 @@
+.row {
+    background-color: #FFFF;
+    min-height: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.list-item {
+    margin: 10px;
+    height: 60px;
+}
+
