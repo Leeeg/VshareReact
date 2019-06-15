@@ -11,7 +11,7 @@ import './style.css'
 class HeaderBar extends React.Component {
     state = {
         icon: 'arrows-alt',
-        count: 100,
+        count: 0,
         visible: false,
         avatar: require('./img/04.jpg')
     };

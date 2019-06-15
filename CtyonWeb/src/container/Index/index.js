@@ -37,7 +37,7 @@ class Index extends React.Component {
                             <ContentMain/>
                         </Content>
                         <Footer style={{textAlign: 'center'}}>
-                            React-Antd
+                            深圳市世纪天元科技有限公司
                         </Footer>
                     </Layout>
                 </Layout>

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ExcelTable from '../../../component/Table'
 import './style.css'
 import {Card, List} from "antd";
+import CustomBreadcrumb from "../../../component/CustomBreadcrumb";
 
 class ImpowerShow extends Component {
 
@@ -41,6 +42,7 @@ class ImpowerShow extends Component {
     render() {
         return (
             <div>
+                <CustomBreadcrumb arr={['授权管理', '查看']}/>
                 <div className='row'>
                     <List
                         grid={{ gutter: 32, column: 4 }}

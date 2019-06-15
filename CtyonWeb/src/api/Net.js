@@ -1,6 +1,6 @@
 //全局路径
-const commonUrl = 'http://192.168.0.40:8081/api';
-// const commonUrl = 'http://47.106.254.237:8081/api';
+// const commonUrl = 'http://192.168.0.40:8081/api';
+const commonUrl = 'http://47.106.254.237:8081/api';
 
 //解析json
 function parseJSON(response) {

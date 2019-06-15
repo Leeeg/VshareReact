@@ -64,7 +64,7 @@ const menus = [
       {key: '/home/display/table', title: '表格', icon: ''},
       {key: '/home/display/tabs', title: '标签页', icon: '',},
     ]
-  },*/
+  },
   {
     title: '反馈组件',
     icon: 'message',
@@ -88,7 +88,7 @@ const menus = [
       {key:'/home/other/404',title:'404',icon:''},
       {key:'/home/other/springText',title:'弹性文字',icon:''},
     ]
-  },
+  },*/
   {
     title: '关于',
     icon: 'info-circle-o',

@@ -4,6 +4,7 @@ import request from '../../../api/Net';
 import * as XLSX from "xlsx";
 import './style.css'
 import ExcelExport from "../../../component/Excel/export";
+import CustomBreadcrumb from "../../../component/CustomBreadcrumb";
 
 const Dragger = Upload.Dragger;
 const {Option} = Select;
@@ -134,7 +135,7 @@ class ImpowerAdd extends React.Component {
     onAddClick = () => {
         const that = this;
         console.log('dataUpload >>>> ');
-        if (!this.state.meid){
+        if (!this.state.meid) {
             message.error('MEID不能为空');
             return;
         }
@@ -162,6 +163,7 @@ class ImpowerAdd extends React.Component {
 
         return (
             <div>
+                <CustomBreadcrumb arr={['授权管理', '添加']}/>
                 <Row className='row' type="flex" justify="center">
                     <Col className="col" span={20}>
                         <div className='gutter-box'>
