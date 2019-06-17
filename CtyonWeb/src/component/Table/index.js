@@ -1,6 +1,7 @@
 import {Table, Button, Popconfirm} from 'antd';
 import React from 'react'
 import request from '../../api/Net'
+import {getAmapKey} from "../../util/utils";
 
 
 class ImpowerTable extends React.Component {
@@ -47,27 +48,30 @@ class ImpowerTable extends React.Component {
             key: 'iccid2'
         },
         {
-            title: 'MODEL',
+            title: '软件名',
             dataIndex: 'model',
             key: 'model'
         },
         {
-            title: 'sysVersion',
+            title: 'ROM版本',
             dataIndex: 'sysversion',
             key: 'sysversion'
         },
         {
-            title: 'appVersion',
+            title: '对讲版本',
             dataIndex: 'appversion',
             key: 'appversion'
         },
         {
-            title: 'Location',
+            title: '位置',
             dataIndex: 'location',
-            key: 'location'
+            key: 'location',
+            render: (text, record, index) => (
+                <p>{this.props.data[index].location}</p>
+            )
         },
         {
-            title: 'IsImpower',
+            title: '是否授权',
             dataIndex: 'isimpower',
             key: 'isimpower',
             width: 200,
@@ -76,7 +80,7 @@ class ImpowerTable extends React.Component {
             )
         },
         {
-            title: 'operation',
+            title: '操作',
             dataIndex: 'operation',
             render: (text, record, index) =>
                 this.props.data.length >= 1 ? (
@@ -107,18 +111,81 @@ class ImpowerTable extends React.Component {
         })
             .then(data => {
                 if (data) {
-                    console.log('getAllImpowers : ' + JSON.stringify(data));
+                    console.log('getAllImpowers 1 : ' + JSON.stringify(data));
+                    let locationGPS = [];
                     if (data.data) {
                         const dataSource = [...data.data];
-                        dataSource.map(record => {
-                            record.key = this.props.count;
-                            this.onCountChange(this.props.count + 1);
+                        for (let i = 0; i < dataSource.length; i++) {
+                            let record = dataSource[i];
+                            record.key = i + 1;
                             console.log("key = " + record.key);
-                        });
-                        this.onDataChange(data.data);
+                            locationGPS.push(record.locationy + ',' + record.locationx);
+                        }
+                        this.onCountChange(dataSource.length);
+                        this.onDataChange(dataSource);
+                        return locationGPS;
                     }
                 }
-            });
+            })
+            .then(data => {
+                console.log('getAllImpowers 2 : ' + JSON.stringify(data));
+                const gpsPoints = data.join('|');
+                console.log('gpsPoints : ' + gpsPoints);
+                request({
+                    url: 'https://restapi.amap.com/v3/assistant/coordinate/convert?locations='
+                        + gpsPoints
+                        + '&coordsys=gps&output=json&key=' + getAmapKey(),
+                    method: 'GET',
+                })
+                    .then(data => {
+                        if (data) {
+                            console.log('loadLocation changeGPS : ' + JSON.stringify(data));
+                            if (data.status == 1) {
+                                const locations = data.locations.toString().replace(';', '|');
+                                return locations;
+                            }
+                        }
+                    })
+                    .then(data => {
+                        if (data){
+                            console.log('getAllImpowers 3 : ' + JSON.stringify(data));
+                            request({
+                                url: 'https://restapi.amap.com/v3/geocode/regeo?' +
+                                    'key=' + getAmapKey() +
+                                    '&location=' + data +
+                                    '&poitype=&radius=&extensions=base&batch=true&roadlevel=1',
+                                method: 'GET',
+                            })
+                                .then(data => {
+                                    if (data) {
+                                        console.log('loadLocation changeGPS : ' + JSON.stringify(data));
+                                        if (data.status == 1) {
+                                            const locationArr = data.regeocodes;
+                                            console.log("location = " + locationArr);
+                                            return locationArr;
+                                        }
+                                    }
+                                })
+                                .then(data => {
+                                    if (data) {
+                                        const dataSource = [...this.props.data];
+                                        if (data.length === dataSource.length) {
+                                            console.log("add location to data");
+                                            for (let i = 0; i < dataSource.length; i++) {
+                                                const location = data[i].formatted_address;
+                                                console.log("location : " + location);
+                                                let record = dataSource[i];
+                                                record.location = location;
+                                            }
+                                            this.onDataChange(dataSource);
+                                        } else {
+                                            console.log(data.length + ' --- ' + dataSource.length);
+                                        }
+                                    }
+                                });
+                        }
+                    });
+            })
     };
 
     impowerClick = (index) => {
@@ -135,7 +202,7 @@ class ImpowerTable extends React.Component {
                     imei2: indexData.imei2,
                     iccid: indexData.iccid,
                     iccid2: indexData.iccid2,
-                    isimpower: impower,
+                    isimpower: impower
                 }
             )
         })
@@ -159,15 +226,13 @@ class ImpowerTable extends React.Component {
                     imei2: indexData.imei2,
                     iccid: indexData.iccid,
                     iccid2: indexData.iccid2,
-                    isimpower: impower,
+                    isimpower: impower
                 }
             )
         })
-            .then(response => {
-                console.log('deleteImpower : ' + JSON.stringify(response));
-                // const dataSource = [...this.props.data];
-                // dataSource.splice(index, 1);
-                // this.onDataChange(dataSource);
+            .then(data => {
+                if (data)
+                    console.log('deleteImpower : ' + JSON.stringify(data));
                 this.loadData();
             });
     };

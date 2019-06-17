@@ -4,6 +4,7 @@ const commonUrl = 'http://47.106.254.237:8081/api';
 
 //解析json
 function parseJSON(response) {
+    console.log('parseJSON = ' + response);
     return response.json()
 }
 
@@ -28,7 +29,11 @@ export default function request(options = {}) {
             'Content-Type': 'application/json;charset=UTF-8'
         };
     }
-    return fetch(commonUrl + url, options)
+    let urlcomplete = url;
+    if (!url.toString().startsWith('http')) {
+        urlcomplete = commonUrl + url;
+    }
+    return fetch(urlcomplete, options)
         .then(checkStatus)
         .then(parseJSON)
         .catch(err => alert('' + err));

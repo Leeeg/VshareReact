@@ -60,7 +60,11 @@ export function calculateWidth(arr){
  */
 export function preloadingImages(arr) {
   arr.forEach(item=>{
-    const img = new Image()
+    const img = new Image();
     img.src = item
   })
+}
+
+export function getAmapKey() {
+  return '14de0171411c0b853068614ca5d33d49';
 }
