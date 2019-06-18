@@ -16,6 +16,11 @@ const menus = [
       {key: '/home/impower/add', title: '添加', icon: '',},
     ]
   },
+    {
+        title: '位置信息',
+        icon: 'environment',
+        key: '/home/location',
+    },
     /**
   {
     title: '基本组件',

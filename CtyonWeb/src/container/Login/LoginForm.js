@@ -11,7 +11,7 @@ class LoginForm extends React.Component {
   state = {
     focusItem: -1,   //保存当前聚焦的input
     code: ''         //验证码
-  }
+  };
 
   componentDidMount () {
     this.createCode()

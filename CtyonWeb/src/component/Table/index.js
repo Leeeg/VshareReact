@@ -21,51 +21,61 @@ class ImpowerTable extends React.Component {
             title: '序号',
             dataIndex: 'key',
             key: 'key',
+            width: 60
         },
         {
             title: 'MEID',
             dataIndex: 'meid',
-            key: 'meid'
+            key: 'meid',
+            width: 100
         },
         {
             title: 'IMEI',
             dataIndex: 'imei',
-            key: 'imei'
+            key: 'imei',
+            width: 100
         },
         {
             title: 'IMEI2',
             dataIndex: 'imei2',
-            key: 'imei2'
+            key: 'imei2',
+            width: 100
         },
         {
             title: 'ICCID',
             dataIndex: 'iccid',
-            key: 'iccid'
+            key: 'iccid',
+            width: 130
         },
         {
             title: 'ICCID2',
             dataIndex: 'iccid2',
-            key: 'iccid2'
+            key: 'iccid2',
+            width: 130
         },
         {
             title: '软件名',
             dataIndex: 'model',
-            key: 'model'
+            key: 'model',
+            width: 100
         },
         {
             title: 'ROM版本',
             dataIndex: 'sysversion',
-            key: 'sysversion'
+            key: 'sysversion',
+            width: 130
         },
         {
             title: '对讲版本',
             dataIndex: 'appversion',
-            key: 'appversion'
+            key: 'appversion',
+            width: 100
         },
         {
             title: '位置',
             dataIndex: 'location',
             key: 'location',
+            width: 100,
             render: (text, record, index) => (
                 <p>{this.props.data[index].location}</p>
             )
@@ -105,6 +115,7 @@ class ImpowerTable extends React.Component {
 
     loadData = () => {
         this.onCountChange(1);
+        let indexArr = [];
         request({
             url: '/impower/admin/getAllImpowers',
             method: 'GET',
@@ -112,79 +123,61 @@ class ImpowerTable extends React.Component {
             .then(data => {
                 if (data) {
                     console.log('getAllImpowers 1 : ' + JSON.stringify(data));
-                    let locationGPS = [];
+                    let locationPoints = [];
                     if (data.data) {
                         const dataSource = [...data.data];
                         for (let i = 0; i < dataSource.length; i++) {
                             let record = dataSource[i];
                             record.key = i + 1;
-                            console.log("key = " + record.key);
-                            locationGPS.push(record.locationy + ',' + record.locationx);
+                            if (record.locationy && record.locationx) {
+                                indexArr.push(i);
+                                locationPoints.push(record.locationy + ',' + record.locationx);
+                            }
                         }
+                        console.log(dataSource);
                         this.onCountChange(dataSource.length);
                         this.onDataChange(dataSource);
-                        return locationGPS;
+                        return locationPoints;
                     }
                 }
             })
             .then(data => {
-                console.log('getAllImpowers 2 : ' + JSON.stringify(data));
-                const gpsPoints = data.join('|');
-                console.log('gpsPoints : ' + gpsPoints);
-                request({
-                    url: 'https://restapi.amap.com/v3/assistant/coordinate/convert?locations='
-                        + gpsPoints
-                        + '&coordsys=gps&output=json&key=' + getAmapKey(),
-                    method: 'GET',
-                })
-                    .then(data => {
-                        if (data) {
-                            console.log('loadLocation changeGPS : ' + JSON.stringify(data));
-                            if (data.status == 1) {
-                                const locations = data.locations.toString().replace(';', '|');
-                                return locations;
-                            }
-                        }
+                if (data) {
+                    console.log('getAllImpowers 2 : ' + JSON.stringify(data));
+                    const points = data.join('|');
+                    console.log('points : ' + points);
+
+                    request({
+                        url: 'https://restapi.amap.com/v3/geocode/regeo?' +
+                            'key=' + getAmapKey() +
+                            '&location=' + points +
+                            '&poitype=&radius=&extensions=base&batch=true&roadlevel=1',
+                        method: 'GET',
                     })
-                    .then(data => {
-                        if (data){
-                            console.log('getAllImpowers 3 : ' + JSON.stringify(data));
-                            request({
-                                url: 'https://restapi.amap.com/v3/geocode/regeo?' +
-                                    'key=' + getAmapKey() +
-                                    '&location=' + data +
-                                    '&poitype=&radius=&extensions=base&batch=true&roadlevel=1',
-                                method: 'GET',
-                            })
-                                .then(data => {
-                                    if (data) {
-                                        console.log('loadLocation changeGPS : ' + JSON.stringify(data));
-                                        if (data.status == 1) {
-                                            const locationArr = data.regeocodes;
-                                            console.log("location = " + locationArr);
-                                            return locationArr;
-                                        }
-                                    }
-                                })
-                                .then(data => {
-                                    if (data) {
-                                        const dataSource = [...this.props.data];
-                                        if (data.length === dataSource.length) {
-                                            console.log("add location to data");
-                                            for (let i = 0; i < dataSource.length; i++) {
-                                                const location = data[i].formatted_address;
-                                                console.log("location : " + location);
-                                                let record = dataSource[i];
-                                                record.location = location;
-                                            }
-                                            this.onDataChange(dataSource);
-                                        } else {
-                                            console.log(data.length + ' --- ' + dataSource.length);
-                                        }
-                                    }
+                        .then(data => {
+                            if (data) {
+                                console.log('loadLocation getArr : ' + JSON.stringify(data));
+                                if (data.status == 1) {
+                                    const locationArr = data.regeocodes;
+                                    console.log("location = " + locationArr);
+                                    return locationArr;
+                                }
+                            }
+                        })
+                        .then(data => {
+                            if (data) {
+                                const dataSource = [...this.props.data];
+                                console.log("add location to data");
+                                data.map(record => {
+                                    const location = record.addressComponent.province;
+                                    console.log("location : " + location);
+                                    dataSource[indexArr.pop()].location = location;
                                 });
-                        }
-                    });
+                                this.onDataChange(dataSource);
+                            }
+                        });
+                }
+
             })
     };
 

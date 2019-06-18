@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import ExcelTable from '../../../component/Table'
 import './style.css'
 import {Card, List} from "antd";
+import {inject} from 'mobx-react'
 import CustomBreadcrumb from "../../../component/CustomBreadcrumb";
 
+@inject('appStore')
 class ImpowerShow extends Component {
 
     state = {
@@ -32,6 +34,7 @@ class ImpowerShow extends Component {
             data: data,
             statistics: statistics.map((item, idx) => idx === 0 ? {...item, value: '总数据 : ' + data.length} : item)
         });
+        this.props.appStore.setImpowers(data);
     }
 
     setCount(count) {

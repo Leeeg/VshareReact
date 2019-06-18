@@ -129,14 +129,14 @@ class ImpowerAdd extends React.Component {
 
     isimpowerChange = isimpower => {
         console.log('isimpowerChange ： ' + isimpower);
-        this.setState({isimpower: isimpower - 1})
+        this.setState({isimpower: isimpower})
     };
 
     onAddClick = () => {
         const that = this;
         console.log('dataUpload >>>> ');
         if (!this.state.meid) {
-            message.error('MEID不能为空');
+            message.error('MEID为空或已添加');
             return;
         }
         request({
@@ -149,12 +149,12 @@ class ImpowerAdd extends React.Component {
         })
             .then(function (response) {
                 console.log(response);
-                if (response.code === 200) {
+                if (response && response.code === 200) {
                     message.success('添加成功');
                     that.setState({meid: ''});
                     console.log('textInput : ' + that.textInput);
                 } else {
-                    alert('' + response.msg);
+                    alert(response);
                 }
             })
     };

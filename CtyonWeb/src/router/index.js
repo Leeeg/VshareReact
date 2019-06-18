@@ -8,6 +8,8 @@ const Home = LoadableComponent(()=>import('../container/Home/index'));  //参数
 const ImpowerShow = LoadableComponent(()=>import('../container/Impower/Show/index'));
 const ImpowerAdd = LoadableComponent(()=>import('../container/Impower/Add/index'));
 
+const Location = LoadableComponent(()=>import('../container/Location/index'));
+
 //基本组件Demo
 // const ButtonDemo = LoadableComponent(()=>import('../../routes/General/ButtonDemo/index'))
 // const IconDemo = LoadableComponent(()=>import('../../routes/General/IconDemo/index'))
@@ -72,8 +74,11 @@ class ContentMain extends React.Component {
           {/*<PrivateRoute exact path='/home/display/tabs' component={TabsDemo}/>*/}
 
           <PrivateRoute exact path='/home/feedback/modal' component={ModalDemo}/>
+
           <PrivateRoute exact path='/home/impower/show' component={ImpowerShow}/>
           <PrivateRoute exact path='/home/impower/add' component={ImpowerAdd}/>
+          <PrivateRoute exact path='/home/location' component={Location}/>
+
           <PrivateRoute exact path='/home/feedback/notification' component={NotificationDemo}/>
           <PrivateRoute exact path='/home/feedback/spin' component={SpinDemo}/>
 
