@@ -117,7 +117,7 @@ class ImpowerTable extends React.Component {
         this.onCountChange(1);
         let indexArr = [];
         request({
-            url: '/impower/admin/getAllImpowers',
+            url: '/admin/getAllImpowers',
             method: 'GET',
         })
             .then(data => {
@@ -187,7 +187,7 @@ class ImpowerTable extends React.Component {
         const impower = indexData.isimpower == 0 ? 1 : 0;
         console.log('impowerClick : impower = ' + impower);
         request({
-            url: '/impower/admin/doImpower',
+            url: '/admin/doImpower',
             method: 'POST',
             body: JSON.stringify({
                     meid: indexData.meid,
@@ -211,7 +211,7 @@ class ImpowerTable extends React.Component {
         const indexData = this.props.data[index];
         const impower = indexData.isimpower ? 0 : 1;
         request({
-            url: '/impower/admin/deleteImpower',
+            url: '/admin/deleteImpower',
             method: 'POST',
             body: JSON.stringify({
                     meid: indexData.meid,

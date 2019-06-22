@@ -56,7 +56,7 @@ class ImpowerAdd extends React.Component {
             onOk() {
                 console.log('dataUpload >>>> ');
                 request({
-                    url: '/impower/admin/insertImpowers',
+                    url: '/admin/insertImpowers',
                     method: 'POST',
                     body: JSON.stringify({
                         listData: that.state.dataUpload,
@@ -140,7 +140,7 @@ class ImpowerAdd extends React.Component {
             return;
         }
         request({
-            url: '/impower/admin/addImpower',
+            url: '/admin/addImpower',
             method: 'POST',
             body: JSON.stringify({
                 meid: this.state.meid,

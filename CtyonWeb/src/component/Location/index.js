@@ -72,7 +72,7 @@ class AMap extends Component {
 
     loadPoints = () => {
         request({
-            url: '/impower/admin/getAllLocation',
+            url: '/admin/getAllLocation',
             method: 'GET',
         })
             .then(data => {
