@@ -28,7 +28,7 @@ class ImpowerShow extends Component {
     };
 
     setData(data) {
-        console.log("setData : " + data);
+        console.log(data);
         const statistics = [...this.state.statistics];
         this.setState({
             data: data,

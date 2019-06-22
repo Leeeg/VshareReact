@@ -48,28 +48,44 @@ class ImpowerAdd extends React.Component {
         }
     };
 
-    showConfirm = () => {
+    showConfirm = (valid, invalidArr) => {
         const that = this;
-        confirm({
-            title: '文件导入成功',
-            content: <p>sas</p>,
-            onOk() {
-                console.log('dataUpload >>>> ');
-                request({
-                    url: '/admin/insertImpowers',
-                    method: 'POST',
-                    body: JSON.stringify({
-                        listData: that.state.dataUpload,
-                    }),
-                })
-                    .then(function (response) {
-                        console.log(response);
+        if (valid) {
+            confirm({
+                title: '文件加载成功',
+                content: <p>是否确定导入数据</p>,
+                onOk() {
+                    console.log('dataUpload >>>> ');
+                    request({
+                        url: '/admin/insertImpowers',
+                        method: 'POST',
+                        body: JSON.stringify({
+                            listData: that.state.dataUpload,
+                        }),
                     })
-            },
-            onCancel() {
-                message.info('已取消，请重新选取文件！')
-            }
-        });
+                        .then(function (response) {
+                            console.log(response);
+                        })
+                },
+                onCancel() {
+                    message.info('已取消，请重新选取文件！')
+                }
+            });
+        } else {
+            console.log(invalidArr);
+            let err = '';
+            invalidArr.map(record => {
+                err = record.MEID + ' | ' + err;
+            });
+            Modal.error({
+                title: '文件有误',
+                content: (
+                    err
+                ),
+                onOk() {},
+            });
+        }
+
     };
 
     onImportExcel = file => {
@@ -92,20 +108,35 @@ class ImpowerAdd extends React.Component {
                         break; // 如果只取第一张表，就取消注释这行
                     }
                 }
-                if (data && data.length > 0 && data[0].MEID && data[0].IsImpower) {
+                if (data && data.length > 0) {
                     const dataUpload = JSON.stringify(data);
                     console.log('onImportExcel->dataUpload : ' + data.length + '条数据  ' + dataUpload);
+                    let dataArr = [];
+                    let invalidArr = [];
+                    let meidArr = [];
+                    data.map((record) => {
+                        if (record.MEID && meidArr.indexOf(record.MEID) === -1 && (typeof record.IsImpower) == 'number') {
+                            dataArr.push(record);
+                            meidArr.push(record.MEID);
+                        } else {
+                            invalidArr.push(record);
+                        }
+                    });
+                    if (invalidArr.length > 0) {
+                        this.showConfirm(false, invalidArr);
+                        return;
+                    }
                     this.setState({
-                        dataUpload: JSON.stringify(data),
+                        dataUpload: dataUpload,
                     }, function () {
                         console.log('this.state.dataUpload : ' + this.state.dataUpload);
-                        this.showConfirm();
+                        this.showConfirm(true);
                     })
                 } else {
                     message.error("文件类型不正确");
                 }
             } catch (e) {
-                // 这里可以抛出文件类型错误不正确的相关提示
+                console.log(e);
                 message.error("文件导入失败");
             }
         };

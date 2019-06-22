@@ -8,6 +8,9 @@ class ImpowerTable extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            baseIndex: 0,
+        }
     }
 
     paginationProps = {
@@ -77,7 +80,7 @@ class ImpowerTable extends React.Component {
             key: 'location',
             width: 100,
             render: (text, record, index) => (
-                <p>{this.props.data[index].location}</p>
+                <p>{this.props.data[this.state.baseIndex + index]? this.props.data[this.state.baseIndex + index].location : ""}</p>
             )
         },
         {
@@ -86,7 +89,7 @@ class ImpowerTable extends React.Component {
             key: 'isimpower',
             width: 200,
             render: (text, record, index) => (
-                <Button onClick={() => this.impowerClick(index)}> {text == 1 ? '已授权(点击取消)' : '点击授权'}</Button>
+                <Button onClick={() => this.impowerClick(this.state.baseIndex + index)}> {text == 1 ? '已授权(点击取消)' : '点击授权'}</Button>
             )
         },
         {
@@ -94,7 +97,7 @@ class ImpowerTable extends React.Component {
             dataIndex: 'operation',
             render: (text, record, index) =>
                 this.props.data.length >= 1 ? (
-                    <Popconfirm title="确定删除吗?" onConfirm={() => this.handleDelete(index)}>
+                    <Popconfirm title="确定删除吗?" onConfirm={() => this.handleDelete(this.state.baseIndex + index)}>
                         <a>Delete</a>
                     </Popconfirm>
                 ) : null,
@@ -113,6 +116,16 @@ class ImpowerTable extends React.Component {
         this.loadData();
     }
 
+    tableOnchange = (pagination, filters, sorter, extra) => {
+        console.log(pagination);
+        console.log(filters);
+        console.log(sorter);
+        console.log(extra);
+        this.setState({
+            baseIndex: (pagination.current -1) * pagination.pageSize,
+        })
+    };
+
     loadData = () => {
         this.onCountChange(1);
         let indexArr = [];
@@ -129,6 +142,7 @@ class ImpowerTable extends React.Component {
                         for (let i = 0; i < dataSource.length; i++) {
                             let record = dataSource[i];
                             record.key = i + 1;
+                            record.location = '';
                             if (record.locationy && record.locationx) {
                                 indexArr.push(i);
                                 locationPoints.push(record.locationy + ',' + record.locationx);
@@ -207,6 +221,7 @@ class ImpowerTable extends React.Component {
     };
 
     handleDelete = (index) => {
+        console.log('handleDelete : baseIndex = ' + this.state.baseIndex);
         console.log('handleDelete : index = ' + index);
         const indexData = this.props.data[index];
         const impower = indexData.isimpower ? 0 : 1;
@@ -237,6 +252,7 @@ class ImpowerTable extends React.Component {
                     columns={this.columns}
                     dataSource={this.props.data}
                     pagination={this.paginationProps}
+                    onChange={this.tableOnchange}
                 />
             </div>
         );
