@@ -1,6 +1,6 @@
 //全局路径
-// const commonUrl = 'http://47.97.160.32:8081/impower';
-const commonUrl = 'http://localhost:8081/impower';
+const commonUrl = 'http://47.97.160.32:8081/impower';
+// const commonUrl = 'http://localhost:8081/impower';
 
 //解析json
 function parseJSON(response) {
