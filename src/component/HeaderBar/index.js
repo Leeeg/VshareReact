@@ -75,7 +75,7 @@ class HeaderBar extends React.Component {
                     type={collapsed ? 'menu-unfold' : 'menu-fold'}
                     className='trigger'
                     onClick={this.toggle}/>
-                <span className='company-name'>Ctyon</span>
+                <span className='company-name'>Vshare</span>
                 <div style={{lineHeight: '64px', float: 'right'}}>
                     <ul className='header-ul'>
                         <li><Icon type={icon} onClick={this.screenfullToggle}/></li>

@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b20cb60e-9175-4a8d-a257-9009acf37c54" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/.idea/CtyonWeb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/config-overrides.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/api/Net.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/demo_fontclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/demo_symbol.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/demo_unicode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/iconfont.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/assets/img/defaultUser.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/CustomBreadcrumb/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/CustomMenu/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Excel/export.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Excel/import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Excel/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/HeaderBar/img/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/HeaderBar/img/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/HeaderBar/img/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/HeaderBar/img/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/HeaderBar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/HeaderBar/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Loading/LoadableComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Loading2/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Loading2/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Location/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/PromptBox/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/SiderNav/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Slider/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Slider/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/Table/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/component/TypingCard/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/About/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Feedback/ModalDemo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Feedback/NotificationDemo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Feedback/SpinDemo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Home/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Home/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Impower/Add/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Impower/Add/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Impower/Show/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Impower/Show/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Index/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Location/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Login/LoginForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Login/RegisterForm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Login/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Login/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/AnimationDemo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/ChartDemo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/DraftDemo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/DraftDemo/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/ErrorPage/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/ErrorPage/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/01.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/02.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/03.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/04.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/05.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/06.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/07.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/08.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/09.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/10.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/11.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/img/12.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/GalleryDemo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/LoadingDemo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/container/Other/SpringText/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/router/PrivateRoute/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/store/appStore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/util/BGParticle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/util/ExcelUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/util/Session.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/util/typing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/src/util/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CtyonWeb/yarn.lock" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config-overrides.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component/SiderNav/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/container/Web/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/container/Android/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/container/Java/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>components</find>
+      <find>headerbar</find>
+      <find>hmr</find>
+      <find>import-file</find>
+      <find>ImpowerShow</find>
+      <find>aler</find>
+      <find>onImportExcel</find>
+      <find>files</find>
+      <find>console</find>
+      <find>ExcelInput</find>
+      <find>this.setState(</find>
+      <find>getAllImpowers :</find>
+      <find>className=</find>
+      <find>ant-row</find>
+      <find>align</find>
+      <find>upLoadData</find>
+      <find>Popconfirm</find>
+      <find>handleDelete</find>
+      <find>state</find>
+      <find>this.state</find>
+      <find>changeData</find>
+      <find>this.setState</find>
+      <find>gesture</find>
+      <find>componentDidMount</find>
+      <find>setterMap</find>
+      <find>request(</find>
+      <find>props</find>
+      <find>.map</find>
+      <find>Cty</find>
+      <find>Ctyon</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>this.props</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/container/Feedback/NotificationDemo/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Feedback/ModalDemo/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Other/AnimationDemo/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Other/ChartDemo/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Other/GalleryDemo/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Other/LoadingDemo/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Login/RegisterForm.js" />
+        <option value="$PROJECT_DIR$/src/container/Other/DraftDemo/index.js" />
+        <option value="$PROJECT_DIR$/src/router/PrivateRoute/index.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/index.css" />
+        <option value="$PROJECT_DIR$/src/component/HeaderBar/style.css" />
+        <option value="$PROJECT_DIR$/src/component/Slider/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/style.css" />
+        <option value="$PROJECT_DIR$/src/util/ExcelUtils.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/index.js" />
+        <option value="$PROJECT_DIR$/src/component/Excel/index.js" />
+        <option value="$PROJECT_DIR$/src/component/Excel/input.js" />
+        <option value="$PROJECT_DIR$/src/component/Excel/import.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/component/Excel/style.css" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Add/style.css" />
+        <option value="$PROJECT_DIR$/src/component/Excel/export.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Show/style.css" />
+        <option value="$PROJECT_DIR$/src/component/Map/AMap.js" />
+        <option value="$PROJECT_DIR$/src/util/utils.js" />
+        <option value="$PROJECT_DIR$/src/container/Login/LoginForm.js" />
+        <option value="$PROJECT_DIR$/src/store/appStore.js" />
+        <option value="$PROJECT_DIR$/build/static/js/1.56482f95.chunk.js" />
+        <option value="$PROJECT_DIR$/src/container/Location/index.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/component/Location/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Show/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Show/index.js" />
+        <option value="$PROJECT_DIR$/src/component/Table/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Add/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Impower/Add/index.js" />
+        <option value="$PROJECT_DIR$/src/api/Net.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/container/Login/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Index/index.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/component/HeaderBar/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Home/index.js" />
+        <option value="$PROJECT_DIR$/src/container/About/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Android/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Java/index.js" />
+        <option value="$PROJECT_DIR$/src/container/Web/index.js" />
+        <option value="$PROJECT_DIR$/src/component/SiderNav/index.js" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="59" />
+    <option name="y" value="-4" />
+    <option name="width" value="1861" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="VshareReact" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VshareReact" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/container" />
+      <recent name="$PROJECT_DIR$/src/container/Impower/Show" />
+      <recent name="$PROJECT_DIR$/src/component/Excel" />
+      <recent name="$PROJECT_DIR$/src/component" />
+      <recent name="$PROJECT_DIR$/src/util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/container" />
+      <recent name="$PROJECT_DIR$/src/container/Impower/Add" />
+      <recent name="$PROJECT_DIR$/src/container/Impower/Show" />
+      <recent name="$PROJECT_DIR$/src/router" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b20cb60e-9175-4a8d-a257-9009acf37c54" name="Default Changelist" comment="" />
+      <created>1559630342117</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559630342117</updated>
+      <workItem from="1559630344160" duration="49391000" />
+      <workItem from="1560154520214" duration="24565000" />
+      <workItem from="1560253718234" duration="511000" />
+      <workItem from="1560254244441" duration="2147000" />
+      <workItem from="1560389399114" duration="13923000" />
+      <workItem from="1560412154110" duration="68000" />
+      <workItem from="1560412236893" duration="11818000" />
+      <workItem from="1560425737753" duration="2349000" />
+      <workItem from="1560428097721" duration="5695000" />
+      <workItem from="1560477375329" duration="9000" />
+      <workItem from="1560477400975" duration="19753000" />
+      <workItem from="1560565746509" duration="1428000" />
+      <workItem from="1560586525823" duration="39106000" />
+      <workItem from="1560930933194" duration="3680000" />
+      <workItem from="1561108291266" duration="20588000" />
+      <workItem from="1561343204706" duration="1557000" />
+      <workItem from="1570845684366" duration="1317000" />
+      <workItem from="1571044276577" duration="2140000" />
+      <workItem from="1571276558048" duration="91000" />
+      <workItem from="1571276664770" duration="6406000" />
+      <workItem from="1571284192038" duration="49000" />
+      <workItem from="1571284253641" duration="185000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="206776000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.184153" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.28134558" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3299075" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>{
+    title: '其它',
+    icon: 'bulb',
+    key: '/home/other',
+    subs:[
+      {key: '/home/other/animation', title: '动画', icon: '',},
+      {key: '/home/other/gallery', title: '画廊', icon: '',},
+      {key:'/home/other/draft',title:'富文本',icon:''},
+      {key:'/home/other/chart',title:'图表',icon:''},
+      {key:'/home/other/loading',title:'加载动画',icon:''},
+      {key:'/home/other/404',title:'404',icon:''},
+      {key:'/home/other/springText',title:'弹性文字',icon:''},
+    ]
+  },</expression-string>
+        <language-id>JavaScript</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/2.17c35d02.chunk.js" />
+    <entry file="file://$PROJECT_DIR$/src/component/Location/Map.js" />
+    <entry file="file://$PROJECT_DIR$/src/component/Loading/LoadableComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/_react-amap@1.2.8@react-amap/types/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/src/container/Impower/Show/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Excel/import.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="762">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/antd/lib/form/Form.d.ts" />
+    <entry file="file://$PROJECT_DIR$/src/container/Login/LoginForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Login/RegisterForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/1.56482f95.chunk.js" />
+    <entry file="file://$PROJECT_DIR$/src/container/Location/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Location/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Excel/export.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#226#230#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="1065" column="4" selection-start-line="1065" selection-start-column="4" selection-end-line="1065" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Impower/Show/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Impower/Add/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/Net.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/img/defaultUser.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/font/iconfont.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/font/demo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1386" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="452" column="17" selection-start-line="452" selection-start-column="17" selection-end-line="452" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/appStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Slider/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/CustomBreadcrumb/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/CustomMenu/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1406">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/TypingCard/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/Table/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4102">
+          <caret line="227" column="17" selection-start-line="227" selection-start-column="17" selection-end-line="227" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/HeaderBar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/PromptBox/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Login/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Feedback/ModalDemo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1240">
+          <caret line="171" column="24" selection-start-line="171" selection-start-column="24" selection-end-line="171" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/PrivateRoute/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Other/GalleryDemo/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3254">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/About/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="35" column="90" selection-start-line="35" selection-start-column="90" selection-end-line="35" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component/SiderNav/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Web/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Android/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/container/Java/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/npm-debug.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config-overrides.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

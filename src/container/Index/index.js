@@ -37,7 +37,7 @@ class Index extends React.Component {
                             <ContentMain/>
                         </Content>
                         <Footer style={{textAlign: 'center'}}>
-                            深圳市世纪天元科技有限公司
+                            Vshare 属于大家的技术分享网站
                         </Footer>
                     </Layout>
                 </Layout>

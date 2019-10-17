@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../CtyonWeb/.idea/CtyonWeb.iml" filepath="$PROJECT_DIR$/../CtyonWeb/.idea/CtyonWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/VshareWeb.iml" filepath="$PROJECT_DIR$/.idea/VshareWeb.iml" />
     </modules>
   </component>
 </project>
