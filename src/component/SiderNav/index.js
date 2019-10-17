@@ -22,6 +22,11 @@ const menus = [
         icon: 'home',
         key: '/home/web'
     },
+    {
+        title: '写博客',
+        icon: 'home',
+        key: '/home/md'
+    },
 
     // {
     //   title: '授权管理',

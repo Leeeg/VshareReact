@@ -2,7 +2,7 @@ import React from 'react'
 import CustomBreadcrumb from '../../component/CustomBreadcrumb/index'
 import TypingCard from '../../component/TypingCard'
 
-export default class About extends React.Component{
+export default class Android extends React.Component{
   render(){
     return (
       <div>

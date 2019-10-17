@@ -17,6 +17,9 @@ const Android = LoadableComponent(()=>import('../container/Android/index'));
 //Web
 const Web = LoadableComponent(()=>import('../container/Web/index'));
 
+//markdown
+const Markdown = LoadableComponent(()=>import('../container/Md/index'));
+
 // //授权显示
 // const ImpowerShow = LoadableComponent(()=>import('../container/Impower/Show/index'));
 //
@@ -55,6 +58,7 @@ class ContentMain extends React.Component {
           <PrivateRoute exact path='/home/java' component={Java}/>
           <PrivateRoute exact path='/home/android' component={Android}/>
           <PrivateRoute exact path='/home/web' component={Web}/>
+          <PrivateRoute exact path='/home/md' component={Markdown}/>
 
           {/*<PrivateRoute exact path='/home/impower/show' component={ImpowerShow}/>*/}
           {/*<PrivateRoute exact path='/home/impower/add' component={ImpowerAdd}/>*/}
