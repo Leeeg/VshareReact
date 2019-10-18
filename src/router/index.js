@@ -18,7 +18,7 @@ const Android = LoadableComponent(()=>import('../container/Android/index'));
 const Web = LoadableComponent(()=>import('../container/Web/index'));
 
 //markdown
-const Markdown = LoadableComponent(()=>import('../container/Md/index'));
+const Markdown = LoadableComponent(()=>import('../container/Editer/index'));
 
 // //授权显示
 // const ImpowerShow = LoadableComponent(()=>import('../container/Impower/Show/index'));

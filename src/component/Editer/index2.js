@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import Editor from 'for-editor'
-import ReactDom from 'react-dom';
 import ReactMarkdown from 'react-markdown';
 
 const input = '# for-editor\n' +

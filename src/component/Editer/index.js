@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Editor from 'for-editor'
+// import Editor from './dist'
 
 class MarkdownEdit extends Component {
 
@@ -43,7 +44,7 @@ class MarkdownEdit extends Component {
     }
 
     addImg($file: File) {
-        // this.$vm.current.$img2Url($file.name, 'file_url')
+
         console.log($file)
     }
 
