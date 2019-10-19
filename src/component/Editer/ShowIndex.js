@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import Editor from 'for-editor'
-// import Editor from './dist'
+import request from "../../api/Net";
 
-class MarkdownEdit extends Component {
+
+class MarkdownShow extends Component {
 
     state = {
         value: '',
@@ -14,11 +15,19 @@ class MarkdownEdit extends Component {
         window.addEventListener('resize', () => {
             this.resize()
         })
-        setTimeout(() => {
-            this.setState({
-                // value
-            })
-        }, 200)
+
+        request({
+            url: '/api/notes/getNotesById?ids=' + 10,
+            method: 'GET',
+        })
+            .then(data => {
+                if (data) {
+                    console.log('getNotesById : ' + JSON.stringify(data));
+                    this.setState({
+                        value: data.data[0].noteContent
+                    })
+                }
+            });
     }
 
     resize() {
@@ -33,27 +42,11 @@ class MarkdownEdit extends Component {
         }
     }
 
-    handleChange(value: string) {
-        this.setState({
-            value: value
-        })
-    }
-
-    handleSave(value: string) {
-        console.log('触发保存事件', value)
-    }
-
-    addImg($file: File) {
-
-        console.log($file)
-    }
-
     render() {
         return (
-
             <div>
                 <div>
-                    {this.state.mobile && (
+                    {this.state.mobile && (//手机
                         <Editor
                             height="500px"
                             toolbar={{
@@ -65,18 +58,15 @@ class MarkdownEdit extends Component {
                             }}
                             value={this.state.value}
                             subfield={false}
-                            onChange={value => this.handleChange(value)}
-                            onSave={value => this.handleSave(value)}
                         />
                     )}
-                    {!this.state.mobile && (
+                    {!this.state.mobile && (//电脑
                         <Editor
+                            toolbar={{
+                            }}
+                            preview={true}
                             language="en"
-                            height="700px"
                             value={this.state.value}
-                            addImg={($file) => this.addImg($file)}
-                            onChange={value => this.handleChange(value)}
-                            onSave={value => this.handleSave(value)}
                         />
                     )}
                 </div>
@@ -87,4 +77,4 @@ class MarkdownEdit extends Component {
     }
 }
 
-export default MarkdownEdit;
+export default MarkdownShow;

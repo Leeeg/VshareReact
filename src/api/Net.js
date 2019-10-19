@@ -1,6 +1,5 @@
 //全局路径
-const commonUrl = 'http://47.97.160.32:8081/impower';
-// const commonUrl = 'http://localhost:8081/impower';
+const commonUrl = 'http://localhost:8089';
 
 //解析json
 function parseJSON(response) {
@@ -24,16 +23,16 @@ export default function request(options = {}) {
     delete options.url;
     options = {...options};
     options.mode = 'cors';//跨域
-    if (!headers) {
-        options.headers = {
-            'Content-Type': 'application/json;charset=UTF-8'
-        };
-    }
-    let urlcomplete = url;
+    // if (!headers) {
+    //     options.headers = {
+    //         'Content-Type': 'application/json;charset=UTF-8'
+    //     };
+    // }
+    let urlComplete = url;
     if (!url.toString().startsWith('http')) {
-        urlcomplete = commonUrl + url;
+        urlComplete = commonUrl + url;
     }
-    return fetch(urlcomplete, options)
+    return fetch(urlComplete, options)
         .then(checkStatus)
         .then(parseJSON)
         .catch(err => alert('' + err));
