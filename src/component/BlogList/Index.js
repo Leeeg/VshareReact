@@ -1,7 +1,5 @@
-import {Avatar, Icon, List} from 'antd';
+import {Icon, List} from 'antd';
 import React, {Component} from 'react';
-import listStyle from './style.css'
-import CustomBreadcrumb from "../CustomBreadcrumb";
 import TypingCard from "../TypingCard";
 
 const listData = [];

@@ -123,7 +123,7 @@ const styles = {
     width: '100vw',
     height: '100vh',
     // backgroundImage: 'url(https://github.com/zhangZhiHao1996/image-store/blob/master/react-admin-master/bg5.jpg?raw=true)',
-    backgroundImage: 'url(https://github.com/zhangZhiHao1996/image-store/blob/master/react-admin-master/bg1.jpg?raw=true)',
+    backgroundImage: 'url(https://ctyon.oss-cn-shenzhen.aliyuncs.com/react/bg1.jpg)',
     backgroundSize: '100% 100%',
     transition:'all .5s'
   },
