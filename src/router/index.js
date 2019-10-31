@@ -78,6 +78,7 @@ class ContentMain extends React.Component {
 
           <PrivateRoute exact path='/home/about' component={About}/>
 
+
           <Redirect exact from='/' to='/home'/>
 
         </Switch>

@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
 import Editor from 'for-editor'
 import request from "../../api/Net";
-
+import {Button, Icon} from "antd";
+import style from './ShowStyle.css'
 
 class MarkdownShow extends Component {
-
-    state = {
-        value: '',
-        mobile: false
+    constructor(props){
+        super(props);
+        this.state = {
+            value: '',
+            mobile: false
+        }
     }
 
     componentDidMount() {
@@ -16,16 +19,23 @@ class MarkdownShow extends Component {
             this.resize()
         })
 
+        document.documentElement.scrollTop = 0
+
+        const itemId = this.props.itemId
+        console.log("props", itemId)
+
         request({
-            url: '/api/notes/getNotesById?ids=' + 10,
+            url: '/api/notes/getNotesById?ids=' + itemId,
             method: 'GET',
         })
             .then(data => {
                 if (data) {
                     console.log('getNotesById : ' + JSON.stringify(data));
-                    this.setState({
-                        value: data.data[0].noteContent
-                    })
+                    if (data.code == 200 && data.data){
+                        this.setState({
+                            value: data.data[0].noteContent
+                        })
+                    }
                 }
             });
     }
@@ -44,7 +54,11 @@ class MarkdownShow extends Component {
 
     render() {
         return (
-            <div>
+            <div >
+                <Button className={'backBt'} type="primary" onClick={()=>this.props.backClick()}>
+                    <Icon type="left" />
+                    Go back
+                </Button>
                 <div>
                     {this.state.mobile && (//手机
                         <Editor
@@ -62,6 +76,7 @@ class MarkdownShow extends Component {
                     )}
                     {!this.state.mobile && (//电脑
                         <Editor
+                            height="800px"
                             toolbar={{
                             }}
                             preview={true}

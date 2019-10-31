@@ -27,6 +27,43 @@ class AppStore {
     @action setImpowers(impowers) {
         this.impowers = impowers
     }
+
+
+    //上次编辑的博客
+    @observable _content = '';//内容
+    @observable _title = '新建Markdown';//标题
+    @observable _tag = '';//标签
+    @observable _describe = '';//描述
+    @observable _markId = '';//id
+
+    @action setContent(value: string) {
+        this._content = value;
+    }
+
+    @action setTitle(value: "") {
+        this._title = value;
+    }
+
+    @action setTag(value: "") {
+        this._tag = value;
+    }
+
+    @action setDescribe(value: "") {
+        this._describe = value;
+    }
+
+    @action setMarkId(value: "") {
+        this._markId = value;
+    }
+
+    @action clearMarkdown() {
+        this._title = '新建Markdown';
+        this._tag = '';
+        this._content = '';
+        this._describe = '';
+        this._markId = '';
+    }
+
 }
 
 export default new AppStore()

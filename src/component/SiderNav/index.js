@@ -71,7 +71,7 @@ const menus = [
     // },
 
     {
-        title: '其他',
+        title: '组件',
         icon: 'bulb',
         key: '/home/other',
         subs: [

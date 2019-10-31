@@ -3,7 +3,13 @@ import CustomBreadcrumb from '../../component/CustomBreadcrumb/index'
 import TypingCard from '../../component/TypingCard'
 
 export default class About extends React.Component{
-  render(){
+
+    componentDidMount() {
+
+        document.documentElement.scrollTop = 0
+
+    }
+        render(){
     return (
       <div>
         <CustomBreadcrumb arr={['Web']}/>

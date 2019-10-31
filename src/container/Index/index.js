@@ -3,11 +3,12 @@ import {Layout, Affix} from 'antd'
 import SiderNav from '../../component/SiderNav'
 import ContentMain from '../../router/index'
 import HeaderBar from '../../component/HeaderBar'
+import {withRouter} from "react-router-dom";
 
 const {Sider, Header, Content, Footer} = Layout;
 
-
 class Index extends React.Component {
+
     state = {
         collapsed: false
     };

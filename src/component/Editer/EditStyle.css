@@ -1,0 +1,26 @@
+.ant-input {
+    width: 250px;
+    height: 40px;
+    margin: 0 4px 4px 0;
+}
+
+.top_button {
+    width: 200px;
+    height: 40px;
+    margin: 0 2px 2px 0;
+}
+
+.top_input_fill {
+    width: 100%;
+    height: 40px;
+    margin: 0 2px 4px 0;
+}
+
+#top{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.editView{
+    visibility: hidden;
+}

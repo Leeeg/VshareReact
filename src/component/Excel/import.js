@@ -4,7 +4,7 @@ import * as XLSX from "xlsx";
 class ExcelInput extends Component {
 
     constructor(props){
-        super();
+        super(props);
     }
 
     onImportExcel = file => {

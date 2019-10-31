@@ -176,7 +176,7 @@ class LoginForm extends React.Component {
           </div>
         </Form>
         <div className='footer'>
-          <div>欢迎登陆后台管理系统</div>
+          <div>欢迎登陆VShare</div>
         </div>
       </div>
     )

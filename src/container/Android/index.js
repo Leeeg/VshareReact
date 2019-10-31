@@ -9,7 +9,6 @@ export default class Android extends React.Component {
             <div>
                 <CustomBreadcrumb arr={['Android']}/>
                 <TypingCard source={'Android文档'} title='Android'/>
-                <MarkdownShow/>
             </div>
         )
     }
