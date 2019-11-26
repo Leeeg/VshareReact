@@ -3,10 +3,9 @@ import {Carousel} from 'antd'
 import './style.css'
 
 const imgs = [
-  'https://ctyon.oss-cn-shenzhen.aliyuncs.com/react/slide1.jpg',
-  'https://ctyon.oss-cn-shenzhen.aliyuncs.com/react/slide2.jpg',
-  'https://ctyon.oss-cn-shenzhen.aliyuncs.com/react/slide3.jpg',
-  'https://ctyon.oss-cn-shenzhen.aliyuncs.com/react/slide4.jpg'
+  'https://vsharel.oss-cn-shenzhen.aliyuncs.com/blog/slide1.jpg',
+  'https://vsharel.oss-cn-shenzhen.aliyuncs.com/blog/slide2.jpg',
+  'https://vsharel.oss-cn-shenzhen.aliyuncs.com/blog/slide3.jpg',
 ]
 
 class Home extends React.Component {

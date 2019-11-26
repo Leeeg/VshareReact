@@ -9,22 +9,22 @@ const menus = [
     },
     {
         title: 'Java',
-        icon: 'home',
+        icon: 'code',
         key: '/home/java'
     },
     {
         title: 'Android',
-        icon: 'home',
+        icon: 'android',
         key: '/home/android'
     },
     {
         title: 'Web',
-        icon: 'home',
+        icon: 'html5',
         key: '/home/web'
     },
     {
         title: '写博客',
-        icon: 'home',
+        icon: 'edit',
         key: '/home/md'
     },
 
