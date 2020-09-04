@@ -20,7 +20,7 @@
     "gsap": "^2.1.2",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
-    "marked": "^0.6.2",
+    "marked": "^0.7.0",
     "mobx": "^5.10.0",
     "mobx-react": "^6.0.3",
     "nprogress": "^0.2.0",
