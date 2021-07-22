@@ -36,7 +36,7 @@
     "reqwest": "^2.0.5",
     "screenfull": "^4.2.0",
     "shufflejs": "^5.2.2",
-    "xlsx": "^0.14.3",
+    "xlsx": "^0.17.0",
     "xlsx-style": "^0.8.13"
   },
   "scripts": {
